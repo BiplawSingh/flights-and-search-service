@@ -25,6 +25,7 @@
 ## Database Design
 
 ### Entities
+
   - Airplane
   - Flight
   - Airport
@@ -35,4 +36,10 @@
   - A flight belongs to an airplane, but one airplane can be used in multiple flights.
   - A city can have many airports, but each airport belongs to a single city.
   - One airport can have many flights, but each flight belongs to a single airport.
+
+### Tables
+
+  - City: id, name, created_at, updated_at
+  - Airport: id, name, address, city_id, created_at, updated_at
+      - Relationship: City has many airports and Airport belongs to a city (one to many)
   
