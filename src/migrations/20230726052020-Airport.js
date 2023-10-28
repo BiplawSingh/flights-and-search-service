@@ -11,7 +11,7 @@ module.exports = {
       },
       name: {
         type: Sequelize.STRING,
-        alloNull: false
+        allowNull: false
       },
       address: {
         type: Sequelize.STRING
