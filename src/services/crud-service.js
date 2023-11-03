@@ -9,7 +9,7 @@ class CrudService {
             return response;
         } catch(error) {
             console.log("Something went wrong in crud service");
-            throw(error);
+            throw {error};
         }
     }
 
@@ -19,7 +19,7 @@ class CrudService {
             return response;
         } catch(error) {
             console.log("Something went wrong in crud service");
-            throw(error);
+            throw {error};
         }
     }
 
@@ -29,7 +29,7 @@ class CrudService {
             return response;
         } catch(error) {
             console.log("Something went wrong in crud service");
-            throw(error);
+            throw {error};
         }
     }
 
@@ -39,7 +39,7 @@ class CrudService {
             return response;
         } catch(error) {
             console.log("Something went wrong in crud service");
-            throw(error);
+            throw {error};
         }
     }
 
@@ -49,7 +49,7 @@ class CrudService {
             return response;
         } catch(error) {
             console.log("Something went wrong in crud service");
-            throw(error);
+            throw {error};
         }
     }
 }

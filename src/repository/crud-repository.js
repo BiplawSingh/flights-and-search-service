@@ -9,7 +9,7 @@ class CrudRepository {
             return result;             
         } catch (error) {
             console.log("Something went wrong in the crud repo");
-            throw (error);
+            throw {error};
         }
     }
     async destroy(modelId) {
@@ -22,7 +22,7 @@ class CrudRepository {
              return true;
         } catch (error) {
             console.log("Something went wrong in the crud repo");
-            throw (error);
+            throw {error};
         }
     }
     async get(modelId) {
@@ -31,7 +31,7 @@ class CrudRepository {
              return result;
         } catch (error) {
             console.log("Something went wrong in the crud repo");
-            throw (error);
+            throw {error};
         }
     }
     async getAll() {
@@ -40,7 +40,7 @@ class CrudRepository {
             return result;
         } catch (error) {
             console.log("Something went wrong in the crud repo");
-            throw (error);
+            throw {error};
         }
     }
     async update(modelId, data) {
@@ -53,7 +53,7 @@ class CrudRepository {
             return result; 
         } catch (error) {
             console.log("Something went wrong in the crud repo");
-            throw (error);
+            throw {error};
         }
     }
 }

@@ -30,7 +30,7 @@ class FlightRepository {
             return flight;
         } catch(error) {
             console.log("Something went wrong in the repository layer");
-            throw(error);
+            throw {error};
         }
     }
 
@@ -40,7 +40,7 @@ class FlightRepository {
             return flight;
         } catch(error) {
             console.log("Something went wrong in the repository layer");
-            throw(error);
+            throw {error};
         }
     }
 
@@ -53,7 +53,7 @@ class FlightRepository {
             return flight;
         } catch(error) {
             console.log("Something went wrong in the repository layer");
-            throw(error);
+            throw {error};
         }
     }
 }

@@ -22,7 +22,7 @@ class FlightService {
             return flight;
         } catch (error) {
             console.log("Something went wrong in the service layer");
-            throw(error);
+            throw {error};
         }
     }
 
@@ -32,7 +32,7 @@ class FlightService {
             return flights;
         } catch (error) {
             console.log("Something went wrong in the service layer");
-            throw(error);
+            throw {error};
         }
         
     }
