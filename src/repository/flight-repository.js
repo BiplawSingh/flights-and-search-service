@@ -56,6 +56,26 @@ class FlightRepository {
             throw {error};
         }
     }
+
+    async updateFlight(flightId, data) {
+        try {
+            const [affectedRows] = await Flights.update(data, {
+                where: {
+                    id: flightId
+                }
+            });
+    
+            if (affectedRows === 0) {
+                console.log(`No flight with id ${flightId} found to update`);
+                return false;
+            }
+    
+            return true;
+        } catch (error) {
+            console.error("Error updating flight in the repository layer:", error.message);
+            throw error;
+        }
+    }
 }
 
 module.exports = FlightRepository;
