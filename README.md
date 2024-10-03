@@ -1,5 +1,11 @@
 # Welcome to Flights Service
 
+## Before we start, here's the link to the other three services
+- [Air Ticket Booking Service](https://github.com/BiplawSingh/airticket-booking-service)
+- [Auth Service](https://github.com/BiplawSingh/auth-service)
+- [Reminder Service](https://github.com/BiplawSingh/reminder-service)
+
+
 ## Project Setup
 - clone the project on your local
 - execute `npm install` on the root directory of downloaded project
